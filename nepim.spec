@@ -1,11 +1,11 @@
 Summary:	tool for measuring available bandwidth between hosts
 Name:		nepim
-Version:	0.43
+Version:	0.44
 Release:	0.1
 License:	GPL
 Group:		Applications
 Source0:	http://download.savannah.gnu.org/releases/nepim/%{name}-%{version}.tar.gz
-# Source0-md5:	2fd3214c47c046f552c34d66c3f87c05
+# Source0-md5:	c73c0e3607c93af1e095c4b8107a1c82
 URL:		http://www.nongnu.org/nepim/
 BuildRequires:	liboop-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
