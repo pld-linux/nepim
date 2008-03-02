@@ -1,9 +1,11 @@
-Summary:	tool for measuring available bandwidth between hosts
+# TODO: optflags
+Summary:	Tool for measuring available bandwidth between hosts
+Summary(pl.UTF-8):	Narzędzie do pomiaru dostępnego pasma między hostami
 Name:		nepim
 Version:	0.44
 Release:	0.1
 License:	GPL
-Group:		Applications
+Group:		Applications/Networking
 Source0:	http://download.savannah.gnu.org/releases/nepim/%{name}-%{version}.tar.gz
 # Source0-md5:	c73c0e3607c93af1e095c4b8107a1c82
 URL:		http://www.nongnu.org/nepim/
@@ -19,12 +21,20 @@ parallel traffic streams, reports periodic partial statistics along
 the testing, accepts rich tunning from command-line options, and
 supports IPv6.
 
+%description -l pl.UTF-8
+Network Pipemeter to narzędzie do pomiaru dostępnego pasma między
+hostami. Jest przydatne także do generowania ruchu sieciowego w celach
+testowych. Działa w trybie klient-serwer, jest przyjazny dla omijania
+NAT-u i firewalli z obsługą stanów (stateful), potrafi obsługiwać
+wiele równoległych strumieni ruchu, podaje na bieżąco częściowe
+raporty statystyczne, daje się w znaczny sposób konfigurować z linii
+poleceń i obsługuje IPv6.
+
 %prep
 %setup -q
 
 %build
-cd src
-%{__make} \
+%{__make} -C src \
 	CC="%{__cc}"
 
 %install
