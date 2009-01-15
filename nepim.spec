@@ -2,12 +2,12 @@
 Summary:	Tool for measuring available bandwidth between hosts
 Summary(pl.UTF-8):	Narzędzie do pomiaru dostępnego pasma między hostami
 Name:		nepim
-Version:	0.52
+Version:	0.53
 Release:	0.1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://download.savannah.gnu.org/releases/nepim/%{name}-%{version}.tar.gz
-# Source0-md5:	68f4c3ce4b46b026bc2c43207f5007ca
+# Source0-md5:	6f7a09e8cb7e605ebe35815ed9239536
 URL:		http://www.nongnu.org/nepim/
 BuildRequires:	liboop-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
